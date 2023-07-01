@@ -1,5 +1,4 @@
 package selenium_automation;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,14 +9,17 @@ public class SeleniumCheckboxes
 {
 	public static void main(String[] args) throws InterruptedException
 	{
+		//added thread sleep to wait for webpage load
 		Thread.sleep(1500);
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\ChromeDriver\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 
+		//exercises for Rahul Shetty 1st test
 		driver.get("https://www.rahulshettyacademy.com/angularpractice/");
 		
+		//my GOD, do I did the test so well(?
 		WebElement nameField = driver.findElement(By.name("name"));
 		nameField.clear();
 		nameField.sendKeys("Evan Tomoki");
